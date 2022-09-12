@@ -14,17 +14,19 @@ body {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   position: relative;
+  overflow-x: hidden;
 }
 
-body:after {
+.hero-content:after {
   content: "";
   z-index: -1;
-  height: 50vh;
+  height: 100vh;
   width: 50%;
+  clip-path: circle(30% at 50% 30%);
   background-color: #ffb566;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15rem;
+  right: 3rem;
 }
 
 .container {
